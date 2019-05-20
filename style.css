@@ -1,0 +1,187 @@
+/*----Подключение шрифтов----*/
+@font-face {
+    font-family: 'Museo Sans Cyrl 100';
+    src: url('../fonts/MuseoSansCyrl-100.eot');
+    src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    src: url('../fonts/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 900';
+    src: url('../fonts/MuseoSansCyrl-900.eot');
+    src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-900.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Natasha';
+    src: url('../fonts/Natasha.eot');
+    src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Natasha.woff2') format('woff2'),
+        url('../fonts/Natasha.woff') format('woff'),
+        url('../fonts/Natasha.ttf') format('truetype'),
+        url('../fonts/Natasha.svg#Natasha') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*----Подключение шрифтов----*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main__container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    border: 2px solid red;
+
+}
+
+div,p,form,a,span,input,button {
+    box-sizing: border-box;
+}
+
+h1,h2,h4 {
+    font-family: 'Natasha';
+}
+
+h3,h5 {
+    font-family: 'Museo Sans Cyrl 100';
+}
+
+a {
+    font-family: 'Museo Sans Cyrl 300';
+    color: #fff;
+}
+
+ul,li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.main__nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+li:first-child {
+    margin-right: 45px
+}
+li:last-child {
+    margin-left: 45px;
+}
+
+
+
+/*---------Первый экран------------*/
+
+
+.main__header {
+    background: #202216 url('../img/header-fon.png') no-repeat center center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.my {
+    font-size: 17px;
+    font-family: 'Museo Sans Cyrl 100';
+    text-transform: uppercase;
+}
+
+.nav__logo {
+    font-size: 16px;
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    letter-spacing:0.1em;
+}
+
+.nav__item {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Museo Sans Cyrl 300';
+    letter-spacing:0.1em;
+    text-transform: uppercase;
+}
+
+.nav__mail {
+    display: inline-block;
+    line-height: .90;
+    text-decoration: none;
+    border-bottom: 1px solid #666764;
+}
+
+
+
+.header__big {
+    margin: 0;
+    padding-top: 290px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 42px;
+}
+
+.header__small {
+    padding-bottom: 255px;
+    padding-top: 27px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Museo Sans Cyrl 100';
+    letter-spacing: 2px;
+}
+
+.arrow__down {
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #b2b2af;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 34px;
+    text-decoration: none;
+    color: #b2b2af;
+
+}
