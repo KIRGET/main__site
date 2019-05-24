@@ -1,4 +1,5 @@
 /*----Подключение шрифтов----*/
+
 @font-face {
     font-family: 'Museo Sans Cyrl 100';
     src: url('../fonts/MuseoSansCyrl-100.eot');
@@ -9,6 +10,18 @@
         url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
     font-weight: 300;
     font-style: normal;
+}
+
+font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    src: url('MuseoSansCyrl-300Italic.eot');
+    src: url('MuseoSansCyrl-300Italic.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-300Italic.woff2') format('woff2'),
+        url('MuseoSansCyrl-300Italic.woff') format('woff'),
+        url('MuseoSansCyrl-300Italic.ttf') format('truetype'),
+        url('MuseoSansCyrl-300Italic.svg#MuseoSansCyrl-300Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
@@ -47,6 +60,7 @@
     font-style: normal;
 }
 
+
 /*----Подключение шрифтов----*/
 
 
@@ -63,8 +77,6 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
-    border: 2px solid red;
-
 }
 
 div,p,form,a,span,input,button {
@@ -75,9 +87,18 @@ h1,h2,h4 {
     font-family: 'Natasha';
 }
 
-h3,h5 {
+h3 {
     font-family: 'Museo Sans Cyrl 100';
 }
+
+
+h5 {
+
+    font-family: 'Museo Sans Cyrl 100';
+    letter-spacing: 0.1em;
+    color: #22241b;
+}
+
 
 a {
     font-family: 'Museo Sans Cyrl 300';
@@ -98,17 +119,23 @@ p {
     display: flex;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .main__nav .container {
     display: flex;
     justify-content: space-between;
 }
 
-li:first-child {
+.first {
     margin-right: 45px
 }
-li:last-child {
+.third {
     margin-left: 45px;
 }
+
+
 
 
 
@@ -150,8 +177,6 @@ li:last-child {
     border-bottom: 1px solid #666764;
 }
 
-
-
 .header__big {
     margin: 0;
     padding-top: 290px;
@@ -183,5 +208,402 @@ li:last-child {
     line-height: 34px;
     text-decoration: none;
     color: #b2b2af;
+}
+
+/*--------- /Первый экран------------*/
+
+
+/*---------Секция Обо Мне------------*/
+
+.about-me__title {
+    width: 426px;
+}
+
+.about-me__on {
+    font-size: 37px;
+    color: #22241b;
+    padding-top: 80px;
+}
+
+.about-me__background {
+    font-family: 'Natasha';
+    font-size: 22px;
+    color: #6d6f69;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.about-me__text {
+    font-size: 15px;
+    font-family: 'Museo Sans Cyrl 300';
+    color: #22241b;
+    padding-bottom: 1.3em;
+    line-height: 2em;
 
 }
+
+merits {
+    width: 426px;
+}
+
+.merits__section {
+    font-family: 'Natasha';
+    font-size: 22px;
+    color: #6d6f69;
+}
+
+.merits__item {
+    font-family: 'Museo Sans Cyrl 100';
+    margin: 0;
+    color: #22241b;
+}
+
+.merits__img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3e6534;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+}
+
+.merits__img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #d3e0cb;
+    left: 7px;
+    top: 7px;
+}
+
+.merits__figure {
+    transform: rotate(-45deg);
+}
+/*--------- /Секция Обо Мне------------*/
+
+
+/*---------------- Блок ЗАСЛУГИ ------*/
+
+.merits__section {
+    padding-left: 28px;
+}
+
+.merits-item__img {
+    margin: 50px 0 0 50px;
+}
+
+.merits__text {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.merits-item__review {
+    padding-top: 50px;
+    margin: 0 0 0 50px;
+}
+
+.merits__review {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.merits-item__experience {
+    margin: 50px;
+}
+
+.merits__experience {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*---------------- /Блок ЗАСЛУГИ ------*/
+
+/*------Оформление Блока СВЯЗЬ ------*/
+
+.social__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__wrap ul li a {
+    text-decoration: none;
+    border-bottom: 1px solid #204d15;
+}
+
+.social-xbox__content li a {
+    color: #204d15;
+}
+
+.social__connect {
+    font-family: 'Natasha';
+    font-size: 22px;
+    color: #6d6f69;
+}
+
+.link {
+    padding-bottom: 10px;
+}
+
+.social-xbox {
+    padding-left: 28px;
+}
+
+.right__man {
+    display: flex;
+    align-items: center;
+}
+
+.man {
+    border: 2px solid;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 18px;
+    background: #eef1ed;
+}
+
+.shy {
+    font-family: 'Museo Sans Cyrl 300';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-left: 25px;
+}
+
+/*------ /Оформление Блока СВЯЗЬ ------*/
+
+/*--------------- НАВЫКИ ----------*/
+
+.skills__caption {
+
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #22241b;
+    padding-top: 95px;
+}
+
+/*--------------- /НАВЫКИ ----------*/
+
+.skills-item {
+    display: flex;
+}
+
+/*--------------- photoshop ----------*/
+.photoshop__one {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #234f18;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.photoshop__number {
+    font-family: 'Museo Sans Cyrl 100';
+    font-size: 13px;
+    color: #234f18;
+}
+
+.skills__photoshop::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #adb2ac;
+    border-radius: 50%;
+    margin-left: 6px;
+
+}
+
+.skills__photoshop {
+    display: flex;
+    align-items: center;
+}
+
+.photoshop__text {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    padding-left: 28px;
+    padding-right: 35px;
+}
+
+/*------------------html-------------------*/
+.skills__html5 {
+    display: flex;
+    align-items: center;
+}
+
+.skills__html5::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #adb2ac;
+    border-radius: 50%;
+    margin-left: 6px;
+
+}
+
+.html__text {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    padding-left: 28px;
+    padding-right: 94px;
+}
+
+.html__two {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #234f18;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.html__number {
+    font-family: 'Museo Sans Cyrl 100';
+    font-size: 13px;
+    color: #234f18;
+}
+
+/*------------------html-------------------*/
+
+/*----------------- css -------------------*/
+
+.skills__css {
+    display: flex;
+    align-items: center;
+}
+
+.skills__css::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #adb2ac;
+    border-radius: 50%;
+    margin-left: 6px;
+
+}
+
+.css__text {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    padding-left: 28px;
+    padding-right: 105px;
+}
+
+.css__tree {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #234f18;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.css__number {
+    font-family: 'Museo Sans Cyrl 100';
+    font-size: 13px;
+    color: #234f18;
+}
+
+/*----------------- css -------------------*/
+
+/*----------------- Лень -------------------*/
+
+.skills__laziness {
+    display: flex;
+    align-items: center;
+}
+
+.skills__laziness::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #adb2ac;
+    border-radius: 50%;
+    margin-left: 6px;
+
+}
+
+.laziness__text {
+    font-family: 'Museo Sans Cyrl 900';
+    text-transform: uppercase;
+    padding-left: 28px;
+}
+
+.laziness__four {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #234f18;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.laziness__number {
+    font-family: 'Museo Sans Cyrl 100';
+    font-size: 13px;
+    color: #234f18;
+}
+
+/*----------------- Лень -------------------*/
+
+/*------------------------ Работы ------*/
+
+.work__word {
+    font-size: 37px;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.common-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__one {
+    width: 298px;
+}
+.card__two {
+    width: 298px;
+}
+.card__tree {
+    width: 298px;
+}
+
+
+/*------------------------FOOTER ------*/
+.future__text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 11px;
+    color: #6d6f69;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 120px;
+    margin-bottom: 110px;
+}
+
+
+
+/*------------------------/FOOTER -----*/
+
+
+
+/*------------------------ /Работы ------*/

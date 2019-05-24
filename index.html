@@ -35,9 +35,9 @@
                         <span class="my">my</span>portfolio
                     </div>
                     <ul class="nav__item d-flex">
-                        <li class="">обо мне </li>
-                        <li class="">навыки</li>
-                        <li class="">работы</li>
+                        <li class="first">обо мне </li>
+                        <li class="second">навыки</li>
+                        <li class="third">работы</li>
                     </ul>
                     <a class="nav__mail" href="#">info@myname.com</a>
                 </div>
@@ -48,92 +48,162 @@
         </div>
     </header>
 
-    <section class="">
+    <section class="my-live">
         <div class="container">
-            <div class="about-me">
-                <h2></h2>
-                <h3></h3>
-                <p></p>
+            <h2 class="about-me__on">обо мне</h2>
+            <div class="about-me__wrapper d-flex justify-content: space-between">
+                <div class="about-me__title">
+                <h3 class="about-me__background">бэкграунд</h3>
+                <p class="about-me__text">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+
+                <p class="about-me__text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+
+                <p class="about-me__text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quiis aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in.</p>
             </div>
 
-            <div class="merits">
-                <h3></h3>
-                <div class="">
-                    <div class="">
-                    </div>
-                    <img src="#" alt="">
-                    <p></p>
-                </div>
+<!------------------------- Блок ЗАСЛУГИ ------>
+            <div class="right-side">
+                <div class="merits">
+                    <h3 class="merits__section">Заслуги</h3>
+                    <div class="left">
+                        <ul class="merits__list d-flex justify-content: space-between">
+                            <li class="merits-item__img">
+                                <div class="merits__img">
+                                    <img src="img/75.png" class="merits__figure" alt="1">
+                                </div>
+                                <h5 class="merits__text">Реализованных <br> проектов</h5>
+                            </li>
 
-                <div class="">
-                    <div class="">
-                    </div>
-                    <img src="#" alt="">
-                    <p></p>
-                </div>
+                            <li class="merits-item__review">
+                                <div class="merits__img">
+                                    <img src="img/154.png" class="merits__figure" alt="2">
+                                </div>
+                                <h5 class="merits__review">Положительных <br>отзыва</h5>
+                            </li>
 
-                <div class="">
-                    <div class="">
+
+                            <li class="merits-item__experience">
+                                <div class="merits__img">
+                                    <img src="img/75.png" class="merits__figure" alt="3">
+                                </div>
+                                <h5 class="merits__experience">Лет <br> опыта</h5>
+                            </li>
+                        </ul>
                     </div>
-                    <img src="#" alt="">
-                    <p></p>
                 </div>
-                <div class="merits__bottom">
-                    <h3></h3>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
-                <div class="merits__icon">
-                    <div class="">
+<!------------------------- /Блок ЗАСЛУГИ ------>
+
+<!------------------------- Блок СВЯЗЬ ------>
+
+                <div class="social-xbox">
+                    <h3 class="social__connect">связь</h3>
+                    <div class="social__item">
+                        <div class="social__wrap">
+                            <ul class="social-xbox__content">
+                                <li class="link"><a href="#">freelance.ru/myname</a></li>
+                                <li class="link"><a href="#">vk.com/12343</a></li>
+                                <li class="link"><a href="#">info@sitename.ru</a></li>
+                            </ul>
+                        </div>
+                        <div class="right__man">
+                            <div class="man">
+                                <img src="img/icon-man.png" alt="man">
+
+                            </div>
+                            <p class="shy">Не стесняйтесь, пишите</p>
+                        </div>
                     </div>
-                    <img src="#" alt="">
-                    <p></p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="">
-        <div class="skils">
-            <h2 class=""></h2>
+<!------------------------ / Блок СВЯЗЬ ------>
 
-            <div class="">
-                <img src="#" alt="">
-                <p></p>
-            </div>
-            <div class="">
-                <img src="#" alt="">
-                <p></p>
-            </div>
-            <div class="">
-                <img src="#" alt="">
-                <p></p>
-            </div>
-            <div class="">
-                <img src="#" alt="">
-                <p></p>
+<!------------------------ НАВЫКИ ------>
+
+<section class="skills-box">
+    <div class="container">
+        <h2 class="skills__caption">Навыки</h2>
+        <div class="skills-box__item">
+            <div class="skills-all">
+                <ul class="skills-item">
+
+                    <li class="skills__photoshop">
+                        <div class="photoshop__one">
+                            <p class="photoshop__number">98%</p>
+                        </div>
+                        <div class="">
+                            <p class="photoshop__text">photoshop</p>
+                        </div>
+                    </li>
+
+                    <li class="skills__html5">
+                        <div class="html__two">
+                            <p class="html__number">99%</p>
+                        </div>
+                        <div class="">
+                            <p class="html__text">html5</p>
+                        </div>
+                    </li>
+
+                    <li class="skills__css">
+                        <div class="css__tree">
+                            <p class="css__number">100%</p>
+                        </div>
+                        <div class="">
+                            <p class="css__text">css</p>
+                        </div>
+                    </li>
+
+                    <li class="skills__laziness">
+                        <div class="laziness__four">
+                            <p class="laziness__number">0%</p>
+                        </div>
+                        <div class="">
+                            <p class="laziness__text">Лень</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!------------------------ /НАВЫКИ ------>
 
-    <section class="my__work">
-        <div class="container">
-            <div class="foto__card">
-                <h2></h2>
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
+<!------------------------ Работы ------>
+<section class="work">
+    <div class="container">
+        <h2 class="work__word">Работы</h2>
+        <div class="common-wrap">
+            <div class="canion">
+                <img src="img/card-1.png"  class="card__one" alt="canion">
+            </div>
+
+            <div class="moose">
+                <img src="img/card-2.png"  class="card__two" alt="the moose">
+            </div>
+
+            <div class="winter">
+                <img src="img/card-3.png"  class="card__tree" alt="winter">
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
+<!------------------------ /Работы ------>
+
+<!------------------------FOOTER ------>
 
     <footer>
         <div class="container">
-            <p></p>
+            <div class="future">
+                <p class="future__text">2018-2099 / Смотрю в будущее</p>
+            </div>
         </div>
     </footer>
 
+    <!------------------------/FOOTER ------>
 </body>
 </html>
